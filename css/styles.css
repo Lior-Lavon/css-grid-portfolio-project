@@ -169,7 +169,7 @@ p {
 /* added during recording */
 
 body {
-  background: var(--clr-primary-7);
+  background: var(--clr-primary-9);
 }
 
 /*
@@ -184,6 +184,7 @@ Navbar
   position: fixed;
   z-index: 4;
 }
+
 .nav-links {
   display: none;
 }
@@ -282,6 +283,9 @@ Navbar
 /* end side bar */
 
 @media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-9);
+  }
   .nav-header span {
     display: none;
   }
@@ -300,6 +304,9 @@ Navbar
   }
   .nav-link a:hover {
     color: var(--clr-primary-5);
+  }
+  .navbar-fixed {
+    background: var(--clr-grey-10);
   }
 }
 
