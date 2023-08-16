@@ -15,6 +15,7 @@ window.addEventListener("scroll", function () {
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
 });
+
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
