@@ -166,6 +166,10 @@ p {
     width: 95vw;
   }
 }
+
+.bg-gray {
+  background: var(--clr-grey-10);
+}
 /* added during recording */
 
 .underline {
@@ -444,8 +448,60 @@ About
 Services
 ===============
 */
-/* small screen layout setup */
 /* bg-grey in globals */
+/* small screen layout setup */
+.services-title {
+  margin-bottom: 4rem;
+}
+.section-center {
+  display: grid;
+  /* (1170 - 64) / 3 */
+  grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+  gap: 2rem;
+}
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--light-shadow);
+
+  display: grid;
+  row-gap: 1rem;
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  transform: scale(1.02);
+  box-shadow: var(--dark-shadow);
+  color: var(--clr-grey-10);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.service h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.service p {
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+
+.service:hover p {
+  color: var(--clr-grey-10);
+}
+.service:hover .underline {
+  background: var(--clr-grey-10);
+}
 
 /*
 =============== 
